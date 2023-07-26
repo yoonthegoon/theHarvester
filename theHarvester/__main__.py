@@ -3,8 +3,8 @@ import argparse
 import asyncio
 import re
 import secrets
-import string
 import sys
+import string
 from typing import Dict, List, Optional
 
 import netaddr
@@ -26,7 +26,7 @@ async def start(rest_args: Optional[argparse.Namespace] = None):
         "-d", "--domain", help="Company name or domain to search.", required=True
     )
     parser.add_argument(
-        "-l",
+        '-l',
         "--limit",
         help="Limit the number of search results, default=500.",
         default=500,
